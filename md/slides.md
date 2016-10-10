@@ -3,6 +3,10 @@
 
 <a href="mailto:liquidnuker@gmail.com">Eohyung Lee</a>
 
+<hr/>
+
+https://leoh0.github.io/presentation-20161010
+
 ---
 <!-- .slide: data-transition="convex" -->
 
@@ -134,9 +138,10 @@ provider network 를 테스트 하기 위해서는 필수
 <ul>
 <span class="fragment"><li>private cloud 에서는 tenant private network이 필수는 아님</li></span>
 <span class="fragment"><li>tunneling network를 쓰기 위해선 mtu 지옥과 en/decapsulation 가속이 필요( $$ )</li></span>
-<span class="fragment"><li>당시엔 openvswitch 아키텍쳐는 neutron-plugin-agent 가 restart 할 시 모든 자신의 네트워크 정보를 neutron-server로 부터 받아옴
-  - tunneling network는 full mesh 정보를 구축하면 대량의 RPC call이 일어남
-  - 더블어 네트워크 초기화 까지 일어 났기 때문에 만약 대량의 RPC call로 rabbitmq 장애 발생시 네트워크가 복구 안됨</li></span>
+<span class="fragment"><li>당시엔 openvswitch 아키텍쳐는 neutron-plugin-agent 가 restart 할 시 모든 자신의 네트워크 정보를 neutron-server로 부터 받아옴</li><ul><li>tunneling network는 full mesh 정보를 구축하면 대량의 RPC call이 일어남</li>
+<li>더불어 네트워크 초기화 까지 일어 났기 때문에 만약 대량의 RPC call로 rabbitmq 장애 발생시 네트워크가 복구 안됨</li>
+</ul>
+</span>
 </ul>
 
 ---
@@ -451,31 +456,31 @@ openstack에서 발생하는 error 로그를 <br/>처음으로 다 받아보게 
 
 --
 
-<img src="md/images/l2path변경1.jpg" />
+<img src="md/images/l2path1.jpg" />
 
 --
 
-<img src="md/images/l2path변경2.jpg" />
+<img src="md/images/l2path2.jpg" />
 
 --
 
-<img src="md/images/l2path변경3.jpg" />
+<img src="md/images/l2path3.jpg" />
 
 --
 
-<img src="md/images/l2path변경4.jpg" />
+<img src="md/images/l2path4.jpg" />
 
 --
 
-<img src="md/images/l2path변경5.jpg" />
+<img src="md/images/l2path5.jpg" />
 
 --
 
-<img src="md/images/l2path변경6.jpg" />
+<img src="md/images/l2path6.jpg" />
 
 --
 
-<img src="md/images/l2path변경7.jpg" />
+<img src="md/images/l2path7.jpg" />
 
 ---
 <!-- .slide: data-transition="convex" -->
